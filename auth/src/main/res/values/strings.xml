@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">GoHire</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="signup" translatable="false">Sign up</string>
+    <string name="find_work_hire_talent" translatable="false">Find work hire talent</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password" translatable="false">Forgot password?</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="terms_and_privacy_policy">By continuing, you agree to our Terms of Service and Privacy Policy</string>
+    <string name="your_email_com" translatable="false">your@email.com</string>
+    <string name="ex_pass">******</string>
+    <string name="account_type">Account Type</string>
+    <string name="individual">Individual</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="business">Business</string>
+    <string name="name">Full Name</string>
+    <string name="john_doe">John Doe</string>
+</resources>
