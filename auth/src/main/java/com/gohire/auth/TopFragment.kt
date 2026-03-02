@@ -42,13 +42,34 @@ class TopFragment : Fragment() {
 
         val btnLogin = view.findViewById<Button>(R.id.btnLogin)
         val btnSignup = view.findViewById<Button>(R.id.btnSignup)
+        btnLogin.isSelected = true
 
         btnLogin.setOnClickListener {
+            btnLogin.isSelected = true
+            btnSignup.isSelected = false
             listener?.onLoginClicked()
+
+            btnLogin.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction {
+                    btnLogin.animate().scaleX(1f).scaleY(1f).duration = 100
+                }
         }
 
         btnSignup.setOnClickListener {
+            btnSignup.isSelected = true
+            btnLogin.isSelected = false
             listener?.onSignupClicked()
+
+            btnSignup.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction {
+                    btnSignup   .animate().scaleX(1f).scaleY(1f).duration = 100
+                }
         }
 
         return view

@@ -76,7 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@drawable/deactive_login_signup_btn"
+                android:background="@drawable/non_active_login_signup_btn"
                 android:text="@string/signup"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />

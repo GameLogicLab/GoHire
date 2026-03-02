@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".SignupFragment">
@@ -38,33 +39,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/layoutIndividual"
-            android:layout_width="155dp"
+            android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="19.5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
             android:clickable="true"
             android:focusable="true"
             android:background="@drawable/input_fileds"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="11dp">
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_gravity="center"
                 android:contentDescription="@string/individual"
                 android:src="@drawable/user" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/individual"
-                android:textAlignment="center"
                 android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
@@ -72,35 +73,34 @@
 
         <LinearLayout
             android:id="@+id/layoutBusiness"
-            android:layout_width="155dp"
+            android:layout_width="0dp"
             android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
             android:clickable="true"
             android:focusable="true"
             android:background="@drawable/input_fileds"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="11dp">
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_gravity="center"
                 android:contentDescription="@string/business"
                 android:src="@drawable/business" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/business"
-                android:textAlignment="center"
                 android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 
     <TextView
         android:layout_width="match_parent"
@@ -159,6 +159,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/active_login_signup_btn"
+        app:backgroundTint="@null"
         android:text="@string/create_account"
         android:textColor="@color/white"
         android:textStyle="bold" />

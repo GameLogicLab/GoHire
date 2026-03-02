@@ -6,10 +6,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.gohire.auth.*
-import com.gohire.auth.MainActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
         }
 
         imageView.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, com.gohire.auth.AuthActivity::class.java)
             startActivity(intent)
             finish()
         }, 2000)

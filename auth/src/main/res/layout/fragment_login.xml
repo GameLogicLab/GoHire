@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".LoginFragment">
@@ -64,6 +65,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/active_login_signup_btn"
+        app:backgroundTint="@null"
         android:text="@string/login"
         android:textColor="@color/white"
         android:textStyle="bold" />
