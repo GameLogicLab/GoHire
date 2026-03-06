@@ -23,3 +23,4 @@ rootProject.name = "GoHire"
 include(":app")
 include(":auth")
 include(":home")
+include(":jobs")
