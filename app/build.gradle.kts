@@ -39,6 +39,9 @@ android {
 
 dependencies {
     implementation(project(":auth"))
+    implementation(project(":jobs"))
+    implementation(project(":home"))
+    implementation(project(":messages"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
